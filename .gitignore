@@ -36,3 +36,7 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# pwa files outputted when running server
+/public/*.js
+/public/*.js.map

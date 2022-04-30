@@ -11,6 +11,7 @@ The boilerplate is a WIP project to help me practice web app archiecture and con
 - One click deployment to Vercel 
 - Styling library (tbd between MaterialUI and TailwindCSS)
 - React Testing Library
+- PWA ready
 
 ## Getting Started
 
@@ -38,6 +39,13 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## PWA
+
+Progressive Web App [DOCS](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
+Make sure to sure to update `./public/manifest.json` with correct information and icons(
+[Generate Icons](https://tools.crawlink.com/tools/pwa-icon-generator/)
+
 
 ## Single click deployment to Vercel
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FTheqwertypusher%2Fnextjs-boiler-plate&project-name=my-app&repo-name=my-app&redirect-url=https%3A%2F%2Fpersonal-site-three-tau.vercel.app%2F&demo-title=Next.js%20Boilerplate%20&demo-description=A%20light-weight%20Typescript%20Next.js%20app%20already%20configured%20for%20static%20analysis%20to%20quickly%20start%20and%20develop.&demo-url=www.google.com&demo-image=https%3A%2F%2Fwww.educative.io%2Fv2api%2Feditorpage%2F6452289848475648%2Fimage%2F5294398307303424)

@@ -1,9 +1,15 @@
 /**
  * @type {import('next').NextConfig}
  */
+const withPWA = require('next-pwa');
 
 // default config: https://github.com/vercel/next.js/blob/canary/packages/next/server/config-shared.ts#L68
-const nextConfig = {
+const nextConfig = withPWA({
+  pwa: {
+    dest: 'public',
+    register: true,
+    skipWaiting: true
+  },
   reactStrictMode: true,
   env: {
     test: 'test'
@@ -14,6 +20,6 @@ const nextConfig = {
   trailingSlash: true,
   reactStrictMode: true,
   distDir: 'build'
-}
+});
 
-module.exports = nextConfig
+module.exports = nextConfig;
