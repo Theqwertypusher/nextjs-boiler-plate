@@ -1,6 +1,51 @@
 {
-  "extends": ["next/core-web-vitals", "airbnb", "airbnb-typescript"],
+  "env": {
+    "jest/globals": true
+  },
   "parserOptions": {
     "project": "./tsconfig.json"
-  }
+  },
+  "extends": [
+    "next/core-web-vitals",
+    "prettier", // https://github.com/prettier/eslint-config-prettier#installation
+    "airbnb",
+    "airbnb-typescript",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    // "plugin:react-hooks/recommended",
+    "plugin:jest/all"
+  ],
+  "plugins": ["jest", "@typescript-eslint"],
+  "rules": {
+    // https://github.com/jsx-eslint/eslint-plugin-react/issues/2387
+    "react/jsx-props-no-spreading": [
+      1,
+      {
+        "explicitSpread": "enforce",
+        "html": "enforce",
+        "custom": "enforce"
+      }
+    ],
+    "react/function-component-definition": [
+      2,
+      { "namedComponents": "arrow-function" }
+    ],
+    "react/jsx-one-expression-per-line": [1, { "allow": "single-child" }],
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error",
+    "indent": ["error", 2]
+  },
+  "overrides": [
+    {
+      "files": ["test/**"], // add other format for tests
+      "plugins": ["jest"],
+      "extends": ["plugin:jest/recommended"],
+      "rules": { "jest/prefer-expect-assertions": "off" }
+    }
+  ]
 }
+
+// evaluate eslint-plugin-import

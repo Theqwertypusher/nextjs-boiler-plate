@@ -32,3 +32,21 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Random notes
+
+added eslint
+read docs -> add individual plugins
+added prettier -> `npx prettier --check`
+verify eslint settings `npx eslint-config-prettier ` on a single file (very helpful)
+set up lint-staged?
+
+https://github.com/okonet/lint-staged
+https://github.com/mrmlnc/fast-glob#pattern-syntax
+
+by default yarn lint - will cache and create files in .next
+
+
+allow global styles 
+
+add commit linting?
