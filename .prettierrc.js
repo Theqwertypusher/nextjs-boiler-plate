@@ -6,5 +6,13 @@ module.exports = {
   bracketSpacing: true,
   arrowParens: 'always',
   tabWidth: 2,
-  parser: 'typescript'
+  parser: 'typescript',
+  overrides: [
+    {
+      files: '*.{css,scss}', // eslint postcss processor works on both
+      options: {
+        parser: 'css'
+      }
+    }
+  ]
 }

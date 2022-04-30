@@ -45,8 +45,10 @@ https://github.com/okonet/lint-staged
 https://github.com/mrmlnc/fast-glob#pattern-syntax
 
 by default yarn lint - will cache and create files in .next
+why is eslint cache created after pre commit hook?
 
-
-allow global styles 
+allow global styles part of boiler plate?
 
 add commit linting?
+
+https://github.com/prettier/stylelint-prettier/issues/2 for setting up css in prettier
