@@ -30,8 +30,15 @@
     "jest/prefer-to-have-length": "warn",
     "jest/valid-expect": "error",
     "indent": ["error", 2],
-    "semi": [0] // https://blog.izs.me/2010/12/an-open-letter-to-javascript-leaders-regarding/ - check prettier
-  },
+    "semi": [0], // https://blog.izs.me/2010/12/an-open-letter-to-javascript-leaders-regarding/ - check prettier
+    "object-curly-newline": ["error", {
+      "ObjectExpression": "always",
+      "ObjectPattern": { "multiline": false },
+      "ImportDeclaration": { "multiline": false },
+      "ExportDeclaration": { "multiline": false }
+  }]
+
+    },
   "overrides": [
     {
       "files": ["test/**"], // add other format for tests
