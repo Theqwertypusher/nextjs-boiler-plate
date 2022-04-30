@@ -8,12 +8,13 @@
     "start": "next start",
     "prettier": "prettier ./src/* --fix",
     "lint": "next lint",
-    "prepare": "husky install"   
+    "prepare": "husky install"
   },
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
-    "@mui/material": "^5.6.3", 
+    "@mui/material": "^5.6.3",
+    "@next/bundle-analyzer": "^12.1.5",
     "next": "12.1.5",
     "react": "18.1.0",
     "react-dom": "18.1.0"

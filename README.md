@@ -1,4 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) boiler plate project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and then configured as an easy to use boilerplate. 
+
+### Disclaimer
+The boilerplate is a WIP project to help me practice web app archiecture and configuration with the added bonus of having a ready to use template for any future projects. All ideas and feedback are welcome!
+
+## The setup
+- Typescript
+- Eslint 
+- Prettier (AirBnB styleguide)
+- Pre-commit hooks to lint-stage
+- One click deployment to Vercel 
+- Styling library (tbd between MaterialUI and TailwindCSS)
+- React Testing Library
 
 ## Getting Started
 
@@ -27,40 +39,11 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Single click deployment to Vercel
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FTheqwertypusher%2Fnextjs-boiler-plate&project-name=my-app&repo-name=my-app&redirect-url=https%3A%2F%2Fpersonal-site-three-tau.vercel.app%2F&demo-title=Next.js%20Boilerplate%20&demo-description=A%20light-weight%20Typescript%20Next.js%20app%20already%20configured%20for%20static%20analysis%20to%20quickly%20start%20and%20develop.&demo-url=www.google.com&demo-image=https%3A%2F%2Fwww.educative.io%2Fv2api%2Feditorpage%2F6452289848475648%2Fimage%2F5294398307303424)
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-## Random Notes
-
-- started with `yarn create next-app --typescript`
-- added dev dependencies 
-- configuring eslint -> typescript -> prettier
-- added prettier -> `npx prettier --check`
-- verified eslint settings `npx eslint-config-prettier ` on a single file (very helpful)
-- set up [lint-staged](https://github.com/okonet/lint-staged)
-- https://github.com/mrmlnc/fast-glob#pattern-syntax
-- https://github.com/prettier/stylelint-prettier/issues/2 for setting up css in prettier
-
-## Things to consider 
-- by default yarn lint - will cache and create files in .next
-- why is eslint cache created after pre commit hook?
-- allow global styles part of boiler plate?
-
-## What is left 
-- ensure pre-commit hooks are working properly
-- set up single click deployments to vercel or netlify? 
-- add styling library 
-- write sample tests
-- ensure formatting works on json files
-
-
-
-
-
-
-
-
-
+    
