@@ -33,22 +33,34 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-## Random notes
+## Random Notes
 
-added eslint
-read docs -> add individual plugins
-added prettier -> `npx prettier --check`
-verify eslint settings `npx eslint-config-prettier ` on a single file (very helpful)
-set up lint-staged?
+- started with `yarn create next-app --typescript`
+- added dev dependencies 
+- configuring eslint -> typescript -> prettier
+- added prettier -> `npx prettier --check`
+- verified eslint settings `npx eslint-config-prettier ` on a single file (very helpful)
+- set up [lint-staged](https://github.com/okonet/lint-staged)
+- https://github.com/mrmlnc/fast-glob#pattern-syntax
+- https://github.com/prettier/stylelint-prettier/issues/2 for setting up css in prettier
 
-https://github.com/okonet/lint-staged
-https://github.com/mrmlnc/fast-glob#pattern-syntax
+## Things to consider 
+- by default yarn lint - will cache and create files in .next
+- why is eslint cache created after pre commit hook?
+- allow global styles part of boiler plate?
 
-by default yarn lint - will cache and create files in .next
-why is eslint cache created after pre commit hook?
+## What is left 
+- ensure pre-commit hooks are working properly
+- set up single click deployments to vercel or netlify? 
+- add styling library 
+- write sample tests
+- ensure formatting works on json files
 
-allow global styles part of boiler plate?
 
-add commit linting?
 
-https://github.com/prettier/stylelint-prettier/issues/2 for setting up css in prettier
+
+
+
+
+
+
