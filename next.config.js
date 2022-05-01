@@ -19,7 +19,6 @@ const nextConfig = withPWA({
   },
   trailingSlash: true,
   reactStrictMode: true,
-  distDir: 'build'
 });
 
 module.exports = nextConfig;
