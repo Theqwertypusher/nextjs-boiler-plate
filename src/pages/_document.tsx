@@ -1,5 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document';
-
+// https://github.com/vercel/next.js/blob/canary/packages/next/pages/_document.tsx
 const Document = () => (
   <Html>
     <Head>
