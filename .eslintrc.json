@@ -12,13 +12,12 @@
     "airbnb-typescript",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
-    // "plugin:react-hooks/recommended", // conflicts with next/core-web-vitals
     "plugin:jest/all"
+    // "plugin:react-hooks/recommended", // conflicts with next/core-web-vitals
   ],
   "plugins": ["jest", "@typescript-eslint"],
   "rules": {
-    // https://github.com/jsx-eslint/eslint-plugin-react/issues/2387
-    "react/jsx-props-no-spreading": [0],
+    "react/jsx-props-no-spreading": [0], // https://github.com/jsx-eslint/eslint-plugin-react/issues/2387
     "react/function-component-definition": [
       2,
       { "namedComponents": "arrow-function" }
@@ -29,6 +28,9 @@
     "jest/no-identical-title": "error",
     "jest/prefer-to-have-length": "warn",
     "jest/valid-expect": "error",
+    "jest/prefer-expect-assertions": [
+      0
+    ],
     "indent": ["error", 2],
     "semi": [0], // https://blog.izs.me/2010/12/an-open-letter-to-javascript-leaders-regarding/ - check prettier
     "object-curly-newline": ["error", {
@@ -36,9 +38,18 @@
       "ObjectPattern": { "multiline": false },
       "ImportDeclaration": { "multiline": false },
       "ExportDeclaration": { "multiline": false }
-  }]
-
-    },
+  }],
+  "import/no-extraneous-dependencies": [
+    "error",
+    {
+      "devDependencies": [
+        "**/*.test.*",
+        "test-utils"
+      ],
+      "peerDependencies": true
+    }
+  ]
+},
   "overrides": [
     {
       "files": ["test/**"], // add other format for tests
@@ -47,4 +58,5 @@
       "rules": { "jest/prefer-expect-assertions": "off" }
     }
   ]
+
 }
