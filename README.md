@@ -10,7 +10,7 @@ The boilerplate is a WIP project to help me practice web app archiecture and con
 - Pre-commit hooks to lint-stage
 - One click deployment to Vercel 
 - Styling library (tbd between MaterialUI and TailwindCSS)
-- React Testing Library
+- Jest and React Testing Library 
 - PWA ready
 
 ## Getting Started

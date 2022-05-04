@@ -1,11 +1,9 @@
-/* eslint-disable import/no-extraneous-dependencies */
+// setup per https://testing-library.com/docs/react-testing-library/setup
 import { FC, ReactElement } from 'react';
 import { render, queries, RenderOptions } from '@testing-library/react';
 import { ThemeProvider } from 'my-ui-lib';
 import { TranslationProvider } from 'my-i18n-lib';
 import defaultStrings from 'i18n/en-x-default';
-
-// test-utils.ts
 
 const AllTheProviders: FC = ({ children }) => (
   <ThemeProvider theme="light">
